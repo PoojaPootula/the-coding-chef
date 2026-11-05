@@ -1,0 +1,21 @@
+# The Coding Chef
+
+A recipe discovery web application built using Flask.
+
+## Features
+- Browse recipes
+- Vegetarian recipes
+- Non-vegetarian recipes
+- Breakfast recipes
+- Contact page
+
+## Tech Stack
+- Python
+- Flask
+- HTML
+- CSS
+- JavaScript
+
+## Run Locally
+pip install -r requirements.txt
+python app.py

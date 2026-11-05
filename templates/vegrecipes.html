@@ -1,25 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css"/>
-    <title>VEG</title>
-</head>
-<body>
-<div class="webname"><h1><center>THE CODING CHEF</center></h1></div>
-<h3><center>VEG RECIPES</center></h3>
-<nav class="navbar">
-        <ul class="nav-links">
-            <div class="menu"><li><a href="/">HOME</a></li></div>
-        </ul>
-</nav>
+{% extends "base.html" %}
+
+{% block title %}
+Veg Recipes
+{% endblock %}
+
+{% block content %}
 <p class="mainpara">With the wide variety of vegetables and spices available, one can prepare the same vegetable in different ways using various ingredients combinations.
     <br><br>Below are a few such veg recipes that are prepared in one of a kind.
 </p>
 <button type="button" class="collapsible">MASALA BRINJAL</button>
 <div class="content">
   <p class="dish"><br>
-      <img src=v1.jpeg' width="250px" height="250px"/></p></div>
+      <img src="{{url_for('static', filename='images/v1.jpeg' )}}" width="250px" height="250px"/></p></div>
 <br><br>
 <button type="button" class="collapsible">POTATO</button>
 <div class="content">
@@ -28,7 +20,7 @@
       bring it to heat. Add mustard and let them splutter. Add onions, green chili, and green peas, and saute until soft. Add potatoes and cook
       until half boiled. Add tomatoes, salt, and turmeric, and cook until tomatoes become mushy. Add chili powder, coriander powder, and mutton masala
       with a little water and cook until the oil floats. Sprinkle coriander leaves.<br><b>Special Tips (if any):</b><br></p>
-      <img src='v2.jpeg' width="250px" height="250px"/></div>
+      <img src="{{url_for('static', filename='images/v2.jpeg' )}}" width="250px" height="250px"/></div>
 <br><br>
 <button type="button" class="collapsible">LADY FINGERS</button>
 <div class="content">
@@ -38,7 +30,7 @@
       soft. Add lady's fingers and cook until half boiled. Add tomatoes, salt, and turmeric, and cook until tomatoes become mushy. Add blended chili
       powder, coriander powder, and and cook until the oil floats. Sprinkle coriander leaves.<br><b>Special Tips (if any):</b>Keep sauteeing the
       lady’s fingers on high flame to remove the stickiness. One can add curd also to achieve this.<br></p>
-      <img src='v3.jpeg' width="250px" height="250px"/></div>
+      <img src="{{url_for('static', filename='images/v3.jpeg' )}}" width="250px" height="250px"/></div>
 <br><br>
 <button type="button" class="collapsible">CABBAGE</button>
 <div class="content">
@@ -47,7 +39,7 @@
       Add mustard and let them splutter. Add red chili, onions, and green chili, and saute until soft. Add cabbage and cook until half boiled.
       Add tomatoes, salt, and turmeric, and cook until tomatoes become mushy. Add coriander powder, and cook until the oil floats.
       Sprinkle coriander leaves.<br><b>Special Tips (if any):</b><br></p>
-      <img src='v4.jpeg' width="250px" height="250px"/></div>
+      <img src="{{url_for('static', filename='images/v4.jpeg' )}}" width="250px" height="250px"/></div>
 <br><br>
 <button type="button" class="collapsible">CAULIFLOWER</button>
 <div class="content">
@@ -56,7 +48,6 @@
       Add mustard and let them splutter. Add red chili, onions, and green chili, and saute until soft. Add cauliflower and cook until half boiled.
       Add tomato puree, salt, and turmeric, and cook until oil floats. Add coriander powder, and cook until the oil floats. Sprinkle coriander leaves.
       <br><b>Special Tips (if any):</b><br></p>
-      <img src='v5.jpeg' width="250px" height="250px"/></div>
-<script type="text/javascript" src="jscript.js"/>
-</body>
-</html>
+      <img src="{{url_for('static', filename='images/v5.jpeg' )}}" width="250px" height="250px"/></div>
+
+{% endblock %}
