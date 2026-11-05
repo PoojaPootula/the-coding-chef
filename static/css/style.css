@@ -1,8 +1,11 @@
 .webname {
-color: #000000;
-font-family: monospace;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #b22222;
+    margin: 20px 0;
 }
-
 
 /* NAVBAR STYLING STARTS */
 .navbar {
@@ -10,12 +13,13 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 padding: 20px;
-background-color: #B22222;
-color: #000000;
+background-color: #b22222;
 }
 
 .nav-links a {
-color: #000000;
+color: white;
+text-decoration: none;
+font-weight: bold;
 }
 
 /* NAVBAR MENU */
@@ -68,8 +72,11 @@ background-color: #4c9e9e;
 display: block;
 }
 
-.mainpara{
-    font-family: Georgia;
+.mainpara {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 800px;
 }
 
 .dish{
@@ -77,9 +84,9 @@ display: block;
 
 }
 
-img{
-padding: 10px;
-float: right;
+img {
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .collapsible {
@@ -104,4 +111,10 @@ float: right;
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
 }
