@@ -6,30 +6,25 @@ About Us
 
 {% block content %}
 
-<div>
-    <div style="float: left">
+<div class="about-container">
+
+    <div class="about-text">
+        <h2 class="section-title">Our Story</h2>
         <p class="mainpara">
-            Websites always excited us. That excitement led us to learn to code.<br>
-            On the other hand, being WFH coders, we became foodies. Started experimenting with ingredients and prepared appetizing dishes.<br>
+    What started as two simple interests, coding and cooking, gradually turned into something we wanted to share with others.
 
-            <br>One fine day, when we wished to put both our passions, coding and cooking together, we came out with the idea of a food website.
+    While spending long hours working from home and exploring technology, we also found ourselves experimenting in the kitchen, trying new ingredients, recipes, and flavours.
 
-            <br><br>We introduce our website <b>‘THE CODING CHEF’</b> with a variety of recipes, right from breakfast to dessert.
+    Bringing those two passions together gave birth to <b>THE CODING CHEF</b>, a place where technology meets food.
 
-            <br><br>Being basic home cooks, all the ingredients we use are easily available and the cooking process is quick to follow.
+    Our goal is simple: to share easy-to-follow recipes that anyone can prepare at home using everyday ingredients. Whether it's breakfast, rice dishes, vegetarian favourites, or non-vegetarian specialties, every recipe is created with simplicity and taste in mind.
 
-            <br><br>So,
+    We believe great food doesn't need complicated techniques or hard-to-find ingredients. Good cooking starts with curiosity, creativity, and the willingness to try something new.
 
-            <br><br>Let's get cooking.
-        </p>
+    So grab your ingredients, explore our recipes, and let's get cooking.
+    </p>
     </div>
 
-    <div style="float: right">
-        <img src="{{ url_for('static', filename='images/w1.jpg') }}"
-             width="250"
-             height="250"
-             alt="The Coding Chef">
-    </div>
 </div>
 
 {% endblock %}

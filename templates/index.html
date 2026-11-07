@@ -14,4 +14,55 @@ Home
     </p>
 </div>
 
+<h2 class="section-title">Explore Recipes</h2>
+
+<div class="categories">
+
+    <a href="/breakfast" class="category-card">
+        <div class="category-icon">🍳</div>
+        <h3>Breakfast</h3>
+        <p>Quick and delicious morning recipes.</p>
+    </a>
+
+    <a href="/rice" class="category-card">
+        <div class="category-icon">🍚</div>
+        <h3>Rice</h3>
+        <p>Traditional and flavorful rice recipes for every occasion.</p>
+    </a>
+
+    <a href="/vegrecipes" class="category-card">
+        <div class="category-icon">🥗</div>
+        <h3>Veg</h3>
+        <p>Healthy and tasty vegetarian dishes for everyday cooking.</p>
+    </a>
+
+    <a href="/nonvegrecipes" class="category-card">
+        <div class="category-icon">🍗</div>
+        <h3>Non-Veg</h3>
+        <p>Rich and satisfying non-vegetarian favorites.</p>
+    </a>
+
+</div>
+
+<h2 class="section-title">Featured Recipes</h2>
+
+<div class="featured-recipes">
+
+    <div class="recipe-preview">
+        <img src="{{ url_for('static', filename='images/bf1.jpeg') }}">
+        <h3>Breakfast Special</h3>
+    </div>
+
+    <div class="recipe-preview">
+        <img src="{{ url_for('static', filename='images/r1.jpeg') }}">
+        <h3>Rice Delights</h3>
+    </div>
+
+    <div class="recipe-preview">
+        <img src="{{ url_for('static', filename='images/v1.jpeg') }}">
+        <h3>Veg Special</h3>
+    </div>
+
+</div>
+
 {% endblock %}
