@@ -6,7 +6,7 @@ The Coding Chef brings together a collection of home-style recipes ranging from 
 
 ## Live Demo
 
-[Add your Render/Netlify URL here]
+https://thecodingchef.onrender.com/
 
 ## Features
 
@@ -38,6 +38,12 @@ the-coding-chef/
 ├── app.py
 ├── views.py
 ├── requirements.txt
+|
+├── screenshots/
+│   ├── Home.png
+│   ├── breakfast.png
+│   ├── aboutUs.png
+│   └── contactUs.png
 │
 ├── static/
 │   ├── css/
@@ -51,19 +57,19 @@ the-coding-chef/
 
 ### Home Page
 
-[Add Screenshot]
+screenshots/Home.png
 
 ### Recipe Page
 
-[Add Screenshot]
+screenshots/breakfast.png
 
 ### About Us
 
-[Add Screenshot]
+screenshots/aboutUs.png
 
 ### Share Recipe
 
-[Add Screenshot]
+screenshots/contactUs.png
 
 ## Run Locally
 
