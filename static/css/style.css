@@ -113,6 +113,7 @@ img {
 
 .collapsible {
   background-color: #FF6347;
+  transition: background-color 0.3s ease;
   border-radius: 8px;
   margin-top: 10px;
   font-size: 16px;
@@ -125,6 +126,15 @@ img {
   text-align: left;
   outline: none;
   font-size: 15px;
+}
+
+.collapsible::before {
+    content: "▶ ";
+    font-size: 12px;
+}
+
+.collapsible.active::before {
+    content: "▼ ";
 }
 
 .active, .collapsible:hover {
