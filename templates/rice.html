@@ -1,60 +1,170 @@
-{%extends "base.html" %}
+{% extends "base.html" %}
 
 {% block title %}
 Rice Recipes
 {% endblock %}
 
 {% block content %}
-<p class="mainpara">Rice is a staple food of South India. It is a main dish in most of the homes on the daily menu.<br><br>
-There are more than 5 kinds of rice varieties which are usually combined with some gravy(veg/non-veg) or rasam.<br><br>
-Instead of such combinations, one can make flavored rice which adds nutrient values to the rice, according to the quantity of addition.<br>
+<p class="mainpara">Rice is a staple food of South India. It is a main dish in most of the homes on the daily
+    menu.<br><br>
+    There are more than 5 kinds of rice varieties which are usually combined with some gravy(veg/non-veg) or
+    rasam.<br><br>
+    Instead of such combinations, one can make flavored rice which adds nutrient values to the rice, according to the
+    quantity of addition.<br>
 </p>
+
 <button type="button" class="collapsible">COCONUT RICE</button>
-<div class="content">
-  <p class="dish">Coconut rice is a rarely prepared recipe but a health-packed food. Packed with antooxident and anti bacterial effects, coconut rice makes
-      it a nutrient filled dish.<br><br><b>Preparation Time:</b> 10-15mints<br><b>Ingredients:</b><br>Oil
-      <br>Mustard<br>Cumin<br>Peanuts<br>Chana dal<br>Urad dal<br>Dry chili<br>Green Chili<br>Coconut<br>Salt<br>Asafoetida<br>Rice<br>
-      <b>Cooking Method:</b>In a hot pan, heat a few drops of oil before adding cumin, and mustard seeds. Add peanuts, chana dal, and urad dal to
-      the seeds. Join a few red, and green chilies, along with curry leaves, and asafoetida. Put in salt and grated coconut, before adding the rice and
-      mix well.<br><b>Special Tips (if any):</b><br><br>
-      <img src={{url_for('static', filename='images/r1.jpeg' )}} width="250px" height="250px"/></p></div>
-<br><br>
-<button type="button" class="collapsible">LEMON RICE</button>
-<div class="content">
-  <p class="dish">Lemon rice is a go-to recipe when there is leftover rice. It is prepared in many Hindu temples as an offering to deities and to distribute
-      to devotees. It is also widely prepared as a snack when going on a picnic.<br><br><b>Preparation Time:</b> 10-15mints<br><b>Ingredients:</b><br>Oil
-      <br>Mustard<br>Cumin<br>Peanuts<br>Chana dal<br>Urad dal<br>Dry chili<br>Green Chili<br> Lemon<br>Turmeric<br>Salt<br>Asafoetida<br>Rice<br>
-      <b>Cooking Method:</b>In a hot pan, heat a few drops of oil before adding cumin, and mustard seeds. Add peanuts, chana dal, and urad dal to
-      the seeds. Join a few red, and green chilies, along with curry leaves, and asafoetida. Put in salt and turmeric, before squeezing a lemon.
-      Add the lemon juice mixed rice into this mixture and mix well. Check for sourness and add lemon juice, accordingly.<br><b>Special Tips (if any):
-      </b>One can add onions also to the dals mixture, before adding chilies.<br></p>
-      <img src={{url_for('static', filename='images/r2.jpeg' )}} width="250px" height="250px"/></div>
-<br><br>
-<button type="button" class="collapsible">JEERA RICE</button>
-<div class="content">
-  <p class="dish">Jeera rice is a savory food when one wants to have a bowl of flavored rice packed with health. Shahi jeera used in jeera rice,
-      is usually known for digestion. It is also used to treat coldness like cold/cough.<br><b>Preparation Time:</b> 15-20mints<br><b>Ingredients:</b>
-      <br>Oil<br>Shahi Jeera<br>Dry chili<br>Green Chili<br>Onion<br>Mint<br>Salt<br>Rice<br><b>Cooking Method:</b>In a hot pan, heat a few drops of
-      oil and add shahi jeera. Join a few onions, red, and green chilies, mint leaves, and asafoetida. Pour water and sprinkle salt.
-      Soon the water comes to a boil, add rice while stirring to prevent lumps. Boil rice until cooked.<b>Special Tips (if any):</b><br><br>
-      <img src={{url_for('static', filename='images/r3.jpeg' )}} width="250px" height="250px"/></p></div>
-<br><br>
-<button type="button" class="collapsible">BAGARA RICE</button>
-<div class="content">
-  <p class="dish">Bagara rice is a party food in many South Indian households. It is the first dish one prepares during any function/party/festival
-      for the main course. Accommodating it with any curry makes it even more finger-licking.<br><b>Preparation Time:</b>20-30minutes<br>
-      <b>Ingredients:</b><br>Species<br>Onion<br>Green chili<br>Ginger-garlic paste<br>Mint<br>Salt<br>Rice<br><b>Cooking Method:</b>Add bay leaf,
-      shahi jeera, cloves, cardamom, and cinnamon to the hot oil. Join in onions, green chili, and salt. Put in ginger-garlic paste and fry until the
-      raw smell is disappeared. Add mint leaves and pour in some water. Soon the water comes to a boil, add in the rice, soaked for 30 minutes, while
-      stirring to avoid lumps. Boil the rice until cooked.<br><b>Special Tips (if any):</b><br><br>
-      <img src={{url_for('static', filename='images/r4.jpeg' )}} width="250px" height="250px"/></p></div>
-<br><br>
-<button type="button" class="collapsible">CURD RICE</button>
-<div class="content">
-  <p class="dish">Curd rice is a coolant prepared during summer to beat the heat.<br><b>Preparation Time:</b>5 minutes<br><b>Ingredients:</b><br>Cumin<br>Mustard<br>Peanuts<br>Urad dal<br>Chana dal<br>Curd<br>Red, and Green chili.
-      <br><b>Cooking Method: </b> In a hot pan, heat a few drops of oil before adding cumin, and mustard seeds. Add peanuts, chana dal, and urad dal
-      to the seeds. Join a few red, and green chilies, along with curry leaves, and asafoetida. In the rice, add curd, and salt and mix well.
-      Join in the seeds mixture and mix well.<br><b>Special Tips (if any):</b><br><br>
-      <img src={{url_for('static', filename='images/r5.jpeg' )}} width="250px" height="250px"/></p>
+<div class="recipe-layout">
+    <div class="recipe-image">
+        <img src="{{ url_for('static', filename='images/r1.jpeg') }}" alt="Coconut rice">
+    </div>
+    <div class="recipe-details">
+        <p>Coconut rice is a rarely prepared recipe but a health-packed food. Packed with antioxidant and antibacterial
+            effects, coconut rice makes it a nutrient-filled dish.</p>
+        <h3>⏱️ Preparation Time</h3>
+        <p>10-15 minutes</p>
+        <h3>🛒 Ingredients</h3>
+        <ul>
+            <li>Oil</li>
+            <li>Mustard</li>
+            <li>Cumin</li>
+            <li>Peanuts</li>
+            <li>Chana dal</li>
+            <li>Urad dal</li>
+            <li>Dry chili</li>
+            <li>Green chili</li>
+            <li>Coconut</li>
+            <li>Salt</li>
+            <li>Asafoetida</li>
+            <li>Rice</li>
+        </ul>
+        <h3>👩‍🍳 Cooking Method</h3>
+        <p>In a hot pan, heat a few drops of oil before adding cumin and mustard seeds. Add peanuts, chana dal, and urad
+            dal. Add red and green chilies, along with curry leaves and asafoetida. Add salt and grated coconut, then
+            add the rice and mix well.</p>
+    </div>
 </div>
-{%endblock %}
+
+<button type="button" class="collapsible">LEMON RICE</button>
+<div class="recipe-layout">
+    <div class="recipe-image">
+        <img src="{{ url_for('static', filename='images/r2.jpeg') }}" alt="Lemon rice">
+    </div>
+    <div class="recipe-details">
+        <p>Lemon rice is a go-to recipe when there is leftover rice. It is prepared in many Hindu temples as an offering
+            to deities and to distribute to devotees. It is also widely prepared as a snack when going on a picnic.</p>
+        <h3>⏱️ Preparation Time</h3>
+        <p>10-15 minutes</p>
+        <h3>🛒 Ingredients</h3>
+        <ul>
+            <li>Oil</li>
+            <li>Mustard</li>
+            <li>Cumin</li>
+            <li>Peanuts</li>
+            <li>Chana dal</li>
+            <li>Urad dal</li>
+            <li>Dry chili</li>
+            <li>Green chili</li>
+            <li>Lemon</li>
+            <li>Turmeric</li>
+            <li>Salt</li>
+            <li>Asafoetida</li>
+            <li>Rice</li>
+        </ul>
+        <h3>👩‍🍳 Cooking Method</h3>
+        <p>In a hot pan, heat a few drops of oil before adding cumin and mustard seeds. Add peanuts, chana dal, and urad
+            dal. Add red and green chilies, along with curry leaves and asafoetida. Add salt and turmeric, then squeeze
+            in lemon juice. Add the lemon juice to the rice and mix well. Check for sourness and add lemon juice as
+            needed.</p>
+        <h3>💡 Special Tips</h3>
+        <p>One can add onions to the dal mixture before adding chilies.</p>
+    </div>
+</div>
+
+<button type="button" class="collapsible">JEERA RICE</button>
+<div class="recipe-layout">
+    <div class="recipe-image">
+        <img src="{{ url_for('static', filename='images/r3.jpeg') }}" alt="Jeera rice">
+    </div>
+    <div class="recipe-details">
+        <p>Jeera rice is a savory food when one wants to have a bowl of flavored rice packed with health. Shahi jeera
+            used in jeera rice is usually known for digestion. It is also used to treat coldness like cold or cough.</p>
+        <h3>⏱️ Preparation Time</h3>
+        <p>15-20 minutes</p>
+        <h3>🛒 Ingredients</h3>
+        <ul>
+            <li>Oil</li>
+            <li>Shahi jeera</li>
+            <li>Dry chili</li>
+            <li>Green chili</li>
+            <li>Onion</li>
+            <li>Mint</li>
+            <li>Salt</li>
+            <li>Rice</li>
+        </ul>
+        <h3>👩‍🍳 Cooking Method</h3>
+        <p>In a hot pan, heat a few drops of oil and add shahi jeera. Add onions, red and green chilies, mint leaves,
+            and asafoetida. Pour in water and sprinkle salt. When the water comes to a boil, add rice while stirring to
+            prevent lumps. Boil the rice until cooked.</p>
+    </div>
+</div>
+
+<button type="button" class="collapsible">BAGARA RICE</button>
+<div class="recipe-layout">
+    <div class="recipe-image">
+        <img src="{{ url_for('static', filename='images/r4.jpeg') }}" alt="Bagara rice">
+    </div>
+    <div class="recipe-details">
+        <p>Bagara rice is a party food in many South Indian households. It is the first dish one prepares during many
+            functions, parties, and festivals. Accompanying it with any curry makes it even more finger-licking.</p>
+        <h3>⏱️ Preparation Time</h3>
+        <p>20-30 minutes</p>
+        <h3>🛒 Ingredients</h3>
+        <ul>
+            <li>Spices</li>
+            <li>Onion</li>
+            <li>Green chili</li>
+            <li>Ginger-garlic paste</li>
+            <li>Mint</li>
+            <li>Salt</li>
+            <li>Rice</li>
+        </ul>
+        <h3>👩‍🍳 Cooking Method</h3>
+        <p>Add bay leaf, shahi jeera, cloves, cardamom, and cinnamon to hot oil. Add onions, green chili, and salt. Add
+            ginger-garlic paste and fry until the raw smell disappears. Add mint leaves and pour in some water. When the
+            water comes to a boil, add rice that has been soaked for 30 minutes, stirring to avoid lumps. Boil the rice
+            until cooked.</p>
+    </div>
+</div>
+
+<button type="button" class="collapsible">CURD RICE</button>
+<div class="recipe-layout">
+    <div class="recipe-image">
+        <img src="{{ url_for('static', filename='images/r5.jpeg') }}" alt="Curd rice">
+    </div>
+    <div class="recipe-details">
+        <p>Curd rice is a coolant prepared during summer to beat the heat.</p>
+        <h3>⏱️ Preparation Time</h3>
+        <p>5 minutes</p>
+        <h3>🛒 Ingredients</h3>
+        <ul>
+            <li>Cumin</li>
+            <li>Mustard</li>
+            <li>Peanuts</li>
+            <li>Urad dal</li>
+            <li>Chana dal</li>
+            <li>Curd</li>
+            <li>Red and green chili</li>
+            <li>Oil</li>
+            <li>Curry leaves</li>
+            <li>Asafoetida</li>
+            <li>Rice</li>
+            <li>Salt</li>
+        </ul>
+        <h3>👩‍🍳 Cooking Method</h3>
+        <p>In a hot pan, heat a few drops of oil before adding cumin and mustard seeds. Add peanuts, chana dal, and urad
+            dal. Add red and green chilies, along with curry leaves and asafoetida. Add curd and salt to the rice and
+            mix well. Add the seed mixture and mix well.</p>
+    </div>
+</div>
+{% endblock %}

@@ -1,6 +1,7 @@
 # The Coding Chef
 
-A recipe discovery web application built using Flask.
+A Flask-based recipe discovery platform featuring
+breakfast, rice, vegetarian and non-vegetarian recipes.
 
 ## Features
 - Browse recipes

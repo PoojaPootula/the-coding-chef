@@ -5,49 +5,145 @@ Veg Recipes
 {% endblock %}
 
 {% block content %}
-<p class="mainpara">With the wide variety of vegetables and spices available, one can prepare the same vegetable in different ways using various ingredients combinations.
+<p class="mainpara">With the wide variety of vegetables and spices available, one can prepare the same vegetable in
+    different ways using various ingredient combinations.
     <br><br>Below are a few such veg recipes that are prepared in one of a kind.
 </p>
-<button type="button" class="collapsible">MASALA BRINJAL</button>
-<div class="content">
-  <p class="dish"><br>
-      <img src="{{url_for('static', filename='images/v1.jpeg' )}}" width="250px" height="250px"/></p></div>
-<br><br>
-<button type="button" class="collapsible">POTATO</button>
-<div class="content">
-  <p class="dish"><b>Preparation Time:</b> 30 minutes<br><b>Ingredients:</b><br>Potato<br>Oil<br>Mustard<br>Onion<br>Green Chili<br>Green peas<br>Tomato<br>
-      Species (Salt, Chili powder, Turmeric, Mutton Masala, and Coriander powder)<br>Coriander<br><b>Cooking Method:</b>In a hot pan, add oil and
-      bring it to heat. Add mustard and let them splutter. Add onions, green chili, and green peas, and saute until soft. Add potatoes and cook
-      until half boiled. Add tomatoes, salt, and turmeric, and cook until tomatoes become mushy. Add chili powder, coriander powder, and mutton masala
-      with a little water and cook until the oil floats. Sprinkle coriander leaves.<br><b>Special Tips (if any):</b><br></p>
-      <img src="{{url_for('static', filename='images/v2.jpeg' )}}" width="250px" height="250px"/></div>
-<br><br>
-<button type="button" class="collapsible">LADY FINGERS</button>
-<div class="content">
-  <p class="dish"><b>Preparation Time:</b> 30 minutes<br><b>Ingredients:</b><br>Lady fingers<br>Oil<br>Mustard<br>Onion<br>Red chili<br>Garlic<br>Cumin<br>Peanuts
-      <br>Tomato<br>Species (Salt, Turmeric, and Coriander powder)<br>Coriander<br><b>Cooking Method:</b>In a blender, add red chili, cumin, garlic,
-      salt and blend into a powder. In a hot pan, add oil and bring it to heat. Add mustard and let them splutter. Add onions, peanuts, and saute until
-      soft. Add lady's fingers and cook until half boiled. Add tomatoes, salt, and turmeric, and cook until tomatoes become mushy. Add blended chili
-      powder, coriander powder, and and cook until the oil floats. Sprinkle coriander leaves.<br><b>Special Tips (if any):</b>Keep sauteeing the
-      lady’s fingers on high flame to remove the stickiness. One can add curd also to achieve this.<br></p>
-      <img src="{{url_for('static', filename='images/v3.jpeg' )}}" width="250px" height="250px"/></div>
-<br><br>
-<button type="button" class="collapsible">CABBAGE</button>
-<div class="content">
-  <p class="dish"><b>Preparation Time:</b> 30 minutes<br><b>Ingredients:</b><br>Cabbage<br>Oil<br>Mustard<br>Onion<br>Red chili<br>Green chili<br>
-      Tomato<br>Species (Salt, Turmeric, and Coriander powder)<br>Coriander<br><b>Cooking Method:</b>In a hot pan, add oil and bring it to heat.
-      Add mustard and let them splutter. Add red chili, onions, and green chili, and saute until soft. Add cabbage and cook until half boiled.
-      Add tomatoes, salt, and turmeric, and cook until tomatoes become mushy. Add coriander powder, and cook until the oil floats.
-      Sprinkle coriander leaves.<br><b>Special Tips (if any):</b><br></p>
-      <img src="{{url_for('static', filename='images/v4.jpeg' )}}" width="250px" height="250px"/></div>
-<br><br>
-<button type="button" class="collapsible">CAULIFLOWER</button>
-<div class="content">
-  <p class="dish"><b>Preparation Time:</b> 30 minutes<br><b>Ingredients:</b><br>Cauliflower<br>Oil<br>Mustard<br>Onion<br>Red chili<br>Green chili
-      <br>Tomato<br>Species (Salt, Turmeric, and Coriander powder)<br>Coriander<br><b>Cooking Method:</b>In a hot pan, add oil and bring it to heat.
-      Add mustard and let them splutter. Add red chili, onions, and green chili, and saute until soft. Add cauliflower and cook until half boiled.
-      Add tomato puree, salt, and turmeric, and cook until oil floats. Add coriander powder, and cook until the oil floats. Sprinkle coriander leaves.
-      <br><b>Special Tips (if any):</b><br></p>
-      <img src="{{url_for('static', filename='images/v5.jpeg' )}}" width="250px" height="250px"/></div>
 
+<button type="button" class="collapsible">MASALA BRINJAL</button>
+<div class="recipe-layout">
+    <div class="recipe-image">
+        <img src="{{ url_for('static', filename='images/v1.jpeg') }}" alt="Masala brinjal">
+    </div>
+    <div class="recipe-details">
+        <p>Recipe details are not currently provided.</p>
+    </div>
+</div>
+
+<button type="button" class="collapsible">POTATO</button>
+<div class="recipe-layout">
+    <div class="recipe-image">
+        <img src="{{ url_for('static', filename='images/v2.jpeg') }}" alt="Potato curry">
+    </div>
+    <div class="recipe-details">
+        <h3>⏱️ Preparation Time</h3>
+        <p>30 minutes</p>
+        <h3>🛒 Ingredients</h3>
+        <ul>
+            <li>Potato</li>
+            <li>Oil</li>
+            <li>Mustard</li>
+            <li>Onion</li>
+            <li>Green chili</li>
+            <li>Green peas</li>
+            <li>Tomato</li>
+            <li>Salt</li>
+            <li>Chili powder</li>
+            <li>Turmeric</li>
+            <li>Mutton masala</li>
+            <li>Coriander powder</li>
+            <li>Coriander</li>
+        </ul>
+        <h3>👩‍🍳 Cooking Method</h3>
+        <p>In a hot pan, add oil and heat it. Add mustard and let it splutter. Add onions, green chili, and green peas,
+            and saute until soft. Add potatoes and cook until half boiled. Add tomatoes, salt, and turmeric, and cook
+            until the tomatoes become mushy. Add chili powder, coriander powder, and mutton masala with a little water
+            and cook until the oil floats. Sprinkle coriander leaves.</p>
+    </div>
+</div>
+
+<button type="button" class="collapsible">LADY FINGERS</button>
+<div class="recipe-layout">
+    <div class="recipe-image">
+        <img src="{{ url_for('static', filename='images/v3.jpeg') }}" alt="Lady fingers">
+    </div>
+    <div class="recipe-details">
+        <h3>⏱️ Preparation Time</h3>
+        <p>30 minutes</p>
+        <h3>🛒 Ingredients</h3>
+        <ul>
+            <li>Lady fingers</li>
+            <li>Oil</li>
+            <li>Mustard</li>
+            <li>Onion</li>
+            <li>Red chili</li>
+            <li>Garlic</li>
+            <li>Cumin</li>
+            <li>Peanuts</li>
+            <li>Tomato</li>
+            <li>Salt</li>
+            <li>Turmeric</li>
+            <li>Coriander powder</li>
+            <li>Coriander</li>
+        </ul>
+        <h3>👩‍🍳 Cooking Method</h3>
+        <p>In a blender, add red chili, cumin, garlic, and salt, then blend into a powder. In a hot pan, add oil and
+            heat it. Add mustard and let it splutter. Add onions and peanuts, and saute until soft. Add lady fingers and
+            cook until half boiled. Add tomatoes, salt, and turmeric, and cook until the tomatoes become mushy. Add the
+            blended chili powder and coriander powder, then cook until the oil floats. Sprinkle coriander leaves.</p>
+        <h3>💡 Special Tips</h3>
+        <p>Keep sauteing the lady fingers on high flame to remove the stickiness. One can add curd also to achieve this.
+        </p>
+    </div>
+</div>
+
+<button type="button" class="collapsible">CABBAGE</button>
+<div class="recipe-layout">
+    <div class="recipe-image">
+        <img src="{{ url_for('static', filename='images/v4.jpeg') }}" alt="Cabbage">
+    </div>
+    <div class="recipe-details">
+        <h3>⏱️ Preparation Time</h3>
+        <p>30 minutes</p>
+        <h3>🛒 Ingredients</h3>
+        <ul>
+            <li>Cabbage</li>
+            <li>Oil</li>
+            <li>Mustard</li>
+            <li>Onion</li>
+            <li>Red chili</li>
+            <li>Green chili</li>
+            <li>Tomato</li>
+            <li>Salt</li>
+            <li>Turmeric</li>
+            <li>Coriander powder</li>
+            <li>Coriander</li>
+        </ul>
+        <h3>👩‍🍳 Cooking Method</h3>
+        <p>In a hot pan, add oil and heat it. Add mustard and let it splutter. Add red chili, onions, and green chili,
+            and saute until soft. Add cabbage and cook until half boiled. Add tomatoes, salt, and turmeric, and cook
+            until the tomatoes become mushy. Add coriander powder and cook until the oil floats. Sprinkle coriander
+            leaves.</p>
+    </div>
+</div>
+
+<button type="button" class="collapsible">CAULIFLOWER</button>
+<div class="recipe-layout">
+    <div class="recipe-image">
+        <img src="{{ url_for('static', filename='images/v5.jpeg') }}" alt="Cauliflower">
+    </div>
+    <div class="recipe-details">
+        <h3>⏱️ Preparation Time</h3>
+        <p>30 minutes</p>
+        <h3>🛒 Ingredients</h3>
+        <ul>
+            <li>Cauliflower</li>
+            <li>Oil</li>
+            <li>Mustard</li>
+            <li>Onion</li>
+            <li>Red chili</li>
+            <li>Green chili</li>
+            <li>Tomato</li>
+            <li>Salt</li>
+            <li>Turmeric</li>
+            <li>Coriander powder</li>
+            <li>Coriander</li>
+        </ul>
+        <h3>👩‍🍳 Cooking Method</h3>
+        <p>In a hot pan, add oil and heat it. Add mustard and let it splutter. Add red chili, onions, and green chili,
+            and saute until soft. Add cauliflower and cook until half boiled. Add tomato puree, salt, and turmeric, and
+            cook until the oil floats. Add coriander powder and cook until the oil floats. Sprinkle coriander leaves.
+        </p>
+    </div>
+</div>
 {% endblock %}
