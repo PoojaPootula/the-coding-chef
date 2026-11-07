@@ -5,15 +5,20 @@ Rice Recipes
 {% endblock %}
 
 {% block content %}
-<p class="mainpara">Rice is a staple food of South India. It is a main dish in most of the homes on the daily
-    menu.<br><br>
+<div class="category-hero">
+    <h1>Rice Recipes</h1>
+
+    <p>Rice is a staple food of South India. It is a main dish in most of the homes on the daily menu.
     There are more than 5 kinds of rice varieties which are usually combined with some gravy(veg/non-veg) or
-    rasam.<br><br>
+    rasam.
     Instead of such combinations, one can make flavored rice which adds nutrient values to the rice, according to the
-    quantity of addition.<br>
-</p>
+    quantity of addition
+    </p>
+</div>
+
 
 <button type="button" class="collapsible">COCONUT RICE</button>
+<div class="content">
 <div class="recipe-layout">
     <div class="recipe-image">
         <img src="{{ url_for('static', filename='images/r1.jpeg') }}" alt="Coconut rice">
@@ -44,8 +49,10 @@ Rice Recipes
             add the rice and mix well.</p>
     </div>
 </div>
+</div>
 
 <button type="button" class="collapsible">LEMON RICE</button>
+<div class="content">
 <div class="recipe-layout">
     <div class="recipe-image">
         <img src="{{ url_for('static', filename='images/r2.jpeg') }}" alt="Lemon rice">
@@ -80,8 +87,10 @@ Rice Recipes
         <p>One can add onions to the dal mixture before adding chilies.</p>
     </div>
 </div>
+</div>
 
 <button type="button" class="collapsible">JEERA RICE</button>
+<div class="content">
 <div class="recipe-layout">
     <div class="recipe-image">
         <img src="{{ url_for('static', filename='images/r3.jpeg') }}" alt="Jeera rice">
@@ -108,8 +117,10 @@ Rice Recipes
             prevent lumps. Boil the rice until cooked.</p>
     </div>
 </div>
+</div>
 
 <button type="button" class="collapsible">BAGARA RICE</button>
+<div class="content">
 <div class="recipe-layout">
     <div class="recipe-image">
         <img src="{{ url_for('static', filename='images/r4.jpeg') }}" alt="Bagara rice">
@@ -136,8 +147,10 @@ Rice Recipes
             until cooked.</p>
     </div>
 </div>
+</div>
 
 <button type="button" class="collapsible">CURD RICE</button>
+<div class="content">
 <div class="recipe-layout">
     <div class="recipe-image">
         <img src="{{ url_for('static', filename='images/r5.jpeg') }}" alt="Curd rice">
@@ -166,5 +179,6 @@ Rice Recipes
             dal. Add red and green chilies, along with curry leaves and asafoetida. Add curd and salt to the rice and
             mix well. Add the seed mixture and mix well.</p>
     </div>
+</div>
 </div>
 {% endblock %}
